@@ -3,96 +3,201 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Beetroot Web Forms</title>
     </head>
-    <body>
-        <form>
-            <fieldset>
-                <legend>Create an Account</legend>
-                <label>
-                    First Name
-                    <input type="text" name="firstName" />
-                </label>
-                <label>
-                    Last Name
-                    <input type="text" name="lastName" />
-                </label>
-                <label>
-                    Email
-                    <input type="email" name="email" />
-                </label>
-                <p>We'll never share your email with anyone else.</p>
-                <label>
-                    <input type="radio" name="sex" value="male" />
-                    Male
-                </label>
-                <label>
-                    <input type="radio" name="sex" value="female" checked />
-                    Female
-                </label>
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="xs">Extra Small</option>
-                    <option value="s">Small</option>
-                    <option value="m" selected>Medium</option>
-                    <option value="l">Large</option>
-                </select>
-                <label>
-                    City
-                    <input type="text" name="city" />
-                </label>
-                <button type="submit">Sign Up</button>
-                <p>
-                    By clicking the 'Sign Up' button, you confirm that you
-                    accept our <a href="#">Terms of Use</a> and
-                    <a href="#">Privacy Policy</a>.
-                </p>
-                <span></span>
-                <p>Have an account?</p>
-                <a href="#">Log In</a>
-            </fieldset>
-            <fieldset>
-                <legend>Profile</legend>
-                <img src="" alt="" />
-                <label>
-                    <input type="url" name="file" />
-                    Up to 1 MB (300x300 px)
-                </label>
-                <label>
-                    Name
-                    <input type="text" name="name" />
-                </label>
-                <label>
-                    Email
-                    <input type="email" name="email" />
-                </label>
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="xs">Extra Small</option>
-                    <option value="s">Small</option>
-                    <option value="m" selected>Medium</option>
-                    <option value="l">Large</option>
-                </select>
-                <label>
-                    City
-                    <input type="text" name="city" />
-                </label>
-                <label>
-                    Zip Code
-                    <input
-                        type="number"
-                        name="age"
-                        value=" "
-                        min="3"
-                        max="10"
-                    />
-                </label>
-                <label>
-                    Phone Number
-                    <input type="tel" name="phone_number" />
-                </label>
-                <button type="submit">Update</button>
-            </fieldset>
-        </form>
+    <body class="roboto-regular section">
+        <div class="container">
+            <form class="form">
+                <div class="form-card">
+                    <h2 class="roboto-medium title form-card-title">
+                        Create an Account
+                    </h2>
+                    <div class="form-card-name">
+                        <label class="form-card-label form-card-name-label">
+                            First Name
+                            <input
+                                class="form-card-input"
+                                type="text"
+                                name="firstName"
+                            />
+                        </label>
+                        <label class="form-card-label form-card-name-label">
+                            Last Name
+                            <input
+                                class="form-card-input"
+                                type="text"
+                                name="lastName"
+                            />
+                        </label>
+                    </div>
+                    <div class="form-card-email">
+                        <label class="form-card-label">
+                            Email
+                            <input
+                                class="form-card-input"
+                                type="email"
+                                name="email"
+                            />
+                        </label>
+                        <p class="form-card-text">
+                            We'll never share your email with anyone else.
+                        </p>
+                    </div>
+                    <div class="form-card-sex">
+                        <label class="radio-label">
+                            <input
+                                class="radio-input"
+                                type="radio"
+                                name="sex"
+                                value="male"
+                            />
+                            <span class="radio-custom"></span>
+                            Male
+                        </label>
+                        <label class="radio-label">
+                            <input
+                                class="radio-input"
+                                type="radio"
+                                name="sex"
+                                value="female"
+                            />
+                            <span class="radio-custom"></span>
+                            Female
+                        </label>
+                    </div>
+                    <div class="form-card-location">
+                        <div class="form-card-label">
+                            <label for="country">Country</label>
+                            <div class="custom-select">
+                                <select
+                                    class="form-card-input inter-regular"
+                                    id="country"
+                                    name="country"
+                                >
+                                    <option value="" disabled selected>
+                                        Select
+                                    </option>
+                                    <option value="ua">Ukraine</option>
+                                    <option value="us">USA</option>
+                                    <option value="pl">Poland</option>
+                                    <option value="fr">France</option>
+                                    <option value="gr">Germany</option>
+                                    <option value="en">England</option>
+                                    <option value="bl">Belgium</option>
+                                    <option value="sw">Sweden</option>
+                                    <option value="czr">Czech Republic</option>
+                                    <option value="sl">Slovenia</option>
+                                    <option value="it">Italy</option>
+                                    <option value="lat">Latvia</option>
+                                    <option value="dn">Denmark</option>
+                                    <option value="es">Estonia</option>
+                                    <option value="lit">Lithuania</option>
+                                    <option value="sp">Spain</option>
+                                    <option value="ger">Georgia</option>
+                                    <option value="pr">Portugal</option>
+                                </select>
+                                <svg
+                                    class="custom-select-icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M9 2.25L3.75 7.5H14.25L9 2.25ZM9 15.75L3.75 10.5H14.25L9 15.75Z"
+                                        fill="#969696"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <label class="form-card-label">
+                            City
+                            <input
+                                class="form-card-input"
+                                type="text"
+                                name="city"
+                            />
+                        </label>
+                    </div>
+                    <button
+                        class="form-card-button roboto-medium"
+                        type="submit"
+                    >
+                        Sign Up
+                    </button>
+                    <p class="form-card-text roboto-regular">
+                        By clicking the 'Sign Up' button, you confirm that you
+                        accept our
+                        <a class="form-card-link" href="#">Terms of Use</a> and
+                        <a class="form-card-link" href="#">Privacy Policy</a>.
+                    </p>
+                    <span class="form-card-line"></span>
+                    <div class="form-card-login">
+                        <p>Have an account?</p>
+                        <a href="#">Log In</a>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <h2 class="roboto-medium title form-card-title">Profile</h2>
+                    <div>
+                        <img src="" alt="" />
+                        <label>
+                            <input type="url" name="file" />
+                            Up to 1 MB (300x300 px)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Name
+                            <input type="text" name="name" />
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="email" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="xs">Extra Small</option>
+                            <option value="s">Small</option>
+                            <option value="m" selected>Medium</option>
+                            <option value="l">Large</option>
+                        </select>
+                        <label>
+                            City
+                            <input type="text" name="city" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Zip Code
+                            <input
+                                type="number"
+                                name="age"
+                                value=" "
+                                min="3"
+                                max="10"
+                            />
+                        </label>
+                        <label>
+                            Phone Number
+                            <input type="tel" name="phone_number" />
+                        </label>
+                    </div>
+                    <button type="submit">Update</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
