@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Create an Account</legend>
+                <label>
+                    First Name
+                    <input type="text" name="firstName" />
+                </label>
+                <label>
+                    Last Name
+                    <input type="text" name="lastName" />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+                <p>We'll never share your email with anyone else.</p>
+                <label>
+                    <input type="radio" name="sex" value="male" />
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="female" checked />
+                    Female
+                </label>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="xs">Extra Small</option>
+                    <option value="s">Small</option>
+                    <option value="m" selected>Medium</option>
+                    <option value="l">Large</option>
+                </select>
+                <label>
+                    City
+                    <input type="text" name="city" />
+                </label>
+                <button type="submit">Sign Up</button>
+                <p>
+                    By clicking the 'Sign Up' button, you confirm that you
+                    accept our <a href="#">Terms of Use</a> and
+                    <a href="#">Privacy Policy</a>.
+                </p>
+                <span></span>
+                <p>Have an account?</p>
+                <a href="#">Log In</a>
+            </fieldset>
+            <fieldset>
+                <legend>Profile</legend>
+                <img src="" alt="" />
+                <label>
+                    <input type="url" name="file" />
+                    Up to 1 MB (300x300 px)
+                </label>
+                <label>
+                    Name
+                    <input type="text" name="name" />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="xs">Extra Small</option>
+                    <option value="s">Small</option>
+                    <option value="m" selected>Medium</option>
+                    <option value="l">Large</option>
+                </select>
+                <label>
+                    City
+                    <input type="text" name="city" />
+                </label>
+                <label>
+                    Zip Code
+                    <input
+                        type="number"
+                        name="age"
+                        value=" "
+                        min="3"
+                        max="10"
+                    />
+                </label>
+                <label>
+                    Phone Number
+                    <input type="tel" name="phone_number" />
+                </label>
+                <button type="submit">Update</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
