@@ -149,40 +149,117 @@
                 </div>
                 <div class="form-card">
                     <h2 class="roboto-medium title form-card-title">Profile</h2>
-                    <div>
-                        <img src="" alt="" />
-                        <label>
-                            <input type="url" name="file" />
-                            Up to 1 MB (300x300 px)
-                        </label>
+                    <div class="form-card-avatar">
+                        <div class="form-card-avatar-wrapper">
+                            <img src="./images/photo.png" alt="" />
+                        </div>
+                        <div class="form-card-file-wrapper">
+                            <label
+                                class="form-card-label roboto-regular form-card-file"
+                            >
+                                <input
+                                    class="form-card-input roboto-regular form-card-file-input"
+                                    type="file"
+                                    name="file"
+                                />
+                                <svg class="form-card-file-icon">
+                                    <use
+                                        href="./images/icons.svg#icon-camera"
+                                    ></use>
+                                </svg>
+                                <span class="form-card-file-text"
+                                    >Up to 1 MB (300x300 px)</span
+                                >
+                            </label>
+                            <button class="form-card-file-delete" type="button">
+                                <svg class="form-card-file-icon-delete">
+                                    <use
+                                        href="./images/icons.svg#icon-trash"
+                                    ></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div>
-                        <label>
+                    <div class="form-card-name form-card-name-profile">
+                        <label class="form-card-label form-card-name-label">
                             Name
-                            <input type="text" name="name" />
+                            <input
+                                class="form-card-input"
+                                type="text"
+                                name="name"
+                            />
                         </label>
-                        <label>
+                        <label class="form-card-label form-card-name-label">
                             Email
-                            <input type="email" name="email" />
+                            <input
+                                class="form-card-input"
+                                type="email"
+                                name="email"
+                            />
                         </label>
                     </div>
-                    <div>
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="xs">Extra Small</option>
-                            <option value="s">Small</option>
-                            <option value="m" selected>Medium</option>
-                            <option value="l">Large</option>
-                        </select>
-                        <label>
+                    <div class="form-card-location">
+                        <div class="form-card-label">
+                            <label for="country">Country</label>
+                            <div class="custom-select">
+                                <select
+                                    class="form-card-input inter-regular"
+                                    id="country"
+                                    name="country"
+                                >
+                                    <option value="" disabled selected>
+                                        Select
+                                    </option>
+                                    <option value="ua">Ukraine</option>
+                                    <option value="us">USA</option>
+                                    <option value="pl">Poland</option>
+                                    <option value="fr">France</option>
+                                    <option value="gr">Germany</option>
+                                    <option value="en">England</option>
+                                    <option value="bl">Belgium</option>
+                                    <option value="sw">Sweden</option>
+                                    <option value="czr">Czech Republic</option>
+                                    <option value="sl">Slovenia</option>
+                                    <option value="it">Italy</option>
+                                    <option value="lat">Latvia</option>
+                                    <option value="dn">Denmark</option>
+                                    <option value="es">Estonia</option>
+                                    <option value="lit">Lithuania</option>
+                                    <option value="sp">Spain</option>
+                                    <option value="ger">Georgia</option>
+                                    <option value="pr">Portugal</option>
+                                </select>
+                                <svg
+                                    class="custom-select-icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M9 2.25L3.75 7.5H14.25L9 2.25ZM9 15.75L3.75 10.5H14.25L9 15.75Z"
+                                        fill="#969696"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <label class="form-card-label">
                             City
-                            <input type="text" name="city" />
+                            <input
+                                class="form-card-input"
+                                type="text"
+                                name="city"
+                            />
                         </label>
                     </div>
-                    <div>
-                        <label>
+                    <div class="form-card-age">
+                        <label class="form-card-label form-card-name-label">
                             Zip Code
                             <input
+                                class="form-card-input"
                                 type="number"
                                 name="age"
                                 value=" "
@@ -190,12 +267,18 @@
                                 max="10"
                             />
                         </label>
-                        <label>
+                        <label class="form-card-label form-card-name-label">
                             Phone Number
-                            <input type="tel" name="phone_number" />
+                            <input
+                                class="form-card-input"
+                                type="tel"
+                                name="phone_number"
+                            />
                         </label>
                     </div>
-                    <button type="submit">Update</button>
+                    <button class="form-card-button roboto-medium form-card-button-profile" type="submit">
+                        Update
+                    </button>
                 </div>
             </form>
         </div>

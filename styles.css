@@ -1,18 +1,18 @@
 :root {
     /* background color site */
     --light-background-color: #ffffff;
-    --accent-background-color: #007BFF;
+    --accent-background-color: #007bff;
     --dark-background-color: #000000;
     --gray-background-color: #e6e6e6;
     --gray-dark-background-color: #bfbfbf;
-    --gray-line-background-color: #E4E4E4;
+    --gray-line-background-color: #e4e4e4;
 
     /* text color */
-    --dark-text-color: #1C1C1C;
+    --dark-text-color: #1c1c1c;
     --medium-text-color: #545454;
     --light-text-color: #ffffff;
     --gray-text-color: #969696;
-    --accent-text-color: #007BFF;
+    --accent-text-color: #007bff;
 
     /* icon color */
     --gray-icon-color: #969696;
@@ -49,7 +49,10 @@ html {
 body {
     margin: 0 auto;
     color: #000000;
-    background: #F7F7F7;
+    background: #f7f7f7;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -93,13 +96,13 @@ ul {
     list-style-type: none;
 }
 
-fieldset{
+fieldset {
     border: none;
     padding: 0;
     margin: 0;
 }
 
-legend{
+legend {
     padding: 0;
     margin: 0;
 }
@@ -112,23 +115,23 @@ legend{
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 130px;
+    padding: 0 100px;
 }
 
-.title{
+.title {
     font-weight: 500;
     font-size: 24px;
     color: var(--dark-text-color);
 }
 
-.form{
+.form {
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
-.form-card{
+.form-card {
     width: 570px;
-    height: 100%;
     border-radius: 6px;
     background-color: var(--light-background-color);
     padding: 16px 35px;
@@ -138,16 +141,16 @@ legend{
     gap: 20px;
 }
 
-.form-card-title{
+.form-card-title {
     margin-top: 35px;
 }
 
-.form-card-name{
+.form-card-name {
     display: flex;
     gap: 12px;
 }
 
-.form-card-label{
+.form-card-label {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -155,11 +158,11 @@ legend{
     color: var(--medium-text-color);
 }
 
-.form-card-name-label{
+.form-card-name-label {
     width: 245px;
 }
 
-.form-card-input{
+.form-card-input {
     width: 100%;
     height: 40px;
     border-radius: 6px;
@@ -168,32 +171,32 @@ legend{
     color: var(--dark-text-color);
     background-color: var(--light-background-color);
 }
-.form-card-input:hover{
+.form-card-input:hover {
     border: 1px solid var(--accent-text-color);
 }
-.form-card-input:focus{
+.form-card-input:focus {
     border: 1px solid var(--accent-text-color);
 }
 
-.form-card-email{
+.form-card-email {
     display: flex;
     flex-direction: column;
     gap: 8px;
     color: var(--medium-text-color);
 }
 
-.form-card-text{
+.form-card-text {
     font-size: 12px;
     line-height: 1.5;
     color: var(--gray-text-color);
 }
 
-.form-card-sex{
+.form-card-sex {
     display: flex;
     gap: 20px;
     color: var(--medium-text-color);
 }
-.radio-label{
+.radio-label {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -201,7 +204,7 @@ legend{
     position: relative;
     font-size: 16px;
 }
-.radio-input{
+.radio-input {
     position: absolute;
     opacity: 0;
     pointer-events: none;
@@ -230,7 +233,7 @@ legend{
     transform: translate(-50%, -50%) scale(0);
     transition: transform 0.2s ease;
 }
-.radio-input:checked + .radio-custom::before{
+.radio-input:checked + .radio-custom::before {
     content: "";
     width: 8px;
     height: 8px;
@@ -254,7 +257,7 @@ legend{
     z-index: 1;
 }
 
-.form-card-location{
+.form-card-location {
     display: flex;
     gap: 10px;
     color: var(--medium-text-color);
@@ -272,7 +275,7 @@ legend{
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-.custom-select-icon{
+.custom-select-icon {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -282,7 +285,7 @@ legend{
     pointer-events: none;
 }
 
-.form-card-button{
+.form-card-button {
     width: 100%;
     height: 40px;
     border-radius: 6px;
@@ -292,13 +295,13 @@ legend{
     cursor: pointer;
     padding: 8px 10px;
 }
-.form-card-button:hover{
+.form-card-button:hover {
     background-color: var(--gray-background-color);
     color: var(--dark-text-color);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.form-card-text{
+.form-card-text {
     font-size: 12px;
     line-height: 1.5;
     color: var(--gray-text-color);
@@ -306,33 +309,130 @@ legend{
     width: 410px;
     margin: 0 auto;
 }
-.form-card-link{
+.form-card-link {
     text-decoration: none;
     color: var(--accent-text-color);
 }
-.form-card-link:hover, .form-card-link:focus{
+.form-card-link:hover,
+.form-card-link:focus {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
-.form-card-line{
+.form-card-line {
     width: 100%;
     height: 1px;
     background-color: var(--gray-line-background-color);
 }
 
-.form-card-login{
+.form-card-login {
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
     color: var(--medium-text-color);
 }
-.form-card-login a{
+.form-card-login a {
     text-decoration: none;
     color: var(--accent-text-color);
 }
-.form-card-login a:hover, .form-card-login a:focus{
+.form-card-login a:hover,
+.form-card-login a:focus {
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+
+.form-card-avatar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.form-card-avatar-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.form-card-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-card-file-wrapper {
+    display: flex;
+    gap: 10px;
+}
+.form-card-file {
+    position: relative;
+    width: 138px;
+    height: 30px;
+    border: 1px solid var(--gray-line-background-color);
+    border-radius: 6px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    background-color: var(--light-background-color);
+    color: var(--medium-text-color);
+    cursor: pointer;
+}
+.form-card-file-input {
+    display: none;
+}
+.form-card-file-text {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: var(--gray-text-color);
+}
+.form-card-file-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+.form-card-file-delete {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--gray-line-background-color);
+    background-color: var(--light-background-color);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 7px;
+}
+.form-card-file-icon-delete {
+    width: 16px;
+    height: 16px;
+    fill: var(--gray-icon-color);
+}
+.form-card-file-icon use {
+    width: 16px;
+    height: 16px;
+    fill: var(--gray-icon-color);
+}
+
+.form-card-name-profile {
+    gap: 10px;
+}
+
+.form-card-age {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--medium-text-color);
+}
+
+.form-card-button-profile {
+    width: 150px;
 }
