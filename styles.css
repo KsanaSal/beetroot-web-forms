@@ -50,9 +50,17 @@ body {
     margin: 0 auto;
     color: #000000;
     background: #f7f7f7;
-    background-image: url("./images/background.png");
+    background: linear-gradient(
+            #f7f7f7 0%,
+            rgba(191, 93, 233, 0.8) 30%,
+            rgba(126, 124, 246, 0.5) 50%,
+            rgba(249, 191, 120, 0.8) 70%,
+            #f7f7f7 100%
+        ),
+        url("./images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
